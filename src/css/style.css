@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: "header header"
+        "content content"
+        "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.header img {
+    grid-area: header;
+    margin: 45px;
+    margin-bottom: 0;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    margin: 15px;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.content img {
+    margin: 65px 40px;
+    margin-bottom: 0;
+}
+
+.content .info {
+    margin-top: 80px;
+}
+
+.content .info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.content .info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 40px;
+}
+
+.content .info a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    border-radius: 20px;
+    padding: 10px 50px;
+    color: hsl(257, 40%, 49%);
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.content .info a:hover {
+    color: #ffffff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: right;
+}
+
+.footer .social {
+    font-size: 2.1rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.footer .social a {
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 60px;
+    border: 2px solid;
+    padding: 0.5em 0.6em;
+    margin: 0 15px;
+}
+
+.footer .social a:hover {
+    color: hsl(300, 69%, 71%);
+}
