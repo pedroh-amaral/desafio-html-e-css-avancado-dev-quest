@@ -11,6 +11,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     background: url(../images/bg-desktop.svg) no-repeat;
     background-color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    background-size: contain;
+    margin: 0 auto;
 }
 
 .header img {
@@ -56,6 +59,7 @@ body {
     padding: 10px 50px;
     color: hsl(257, 40%, 49%);
     background-color: #ffffff;
+    box-shadow: 0 0 1rem #000000;
     transition: 0.3s;
 }
 
